@@ -1,0 +1,12 @@
+{
+    "port": 3000,
+    "privateKey": "",
+    "domain": "",
+    "reference": "",
+    "customer": {
+        "uid": "",
+        "name": "",
+        "identification": "",
+        "email": ""
+    }
+}
