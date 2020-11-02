@@ -1,0 +1,17 @@
+{
+  "name": "mobbex-sdk-embed-example",
+  "version": "1.0.0",
+  "description": "Embed example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mobbex": "^1.11.0",
+    "path": "^0.12.7"
+  }
+}
