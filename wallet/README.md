@@ -1,4 +1,4 @@
-# Ejemplo
+# Ejemplo Wallet
 
 Ejemplo de la aplicación de un checkout con wallet
 
@@ -9,6 +9,11 @@ $ npm install
 ```
 
 Y luego inciar con:
+```
+$ npm start
+```
+o
+
 ```
 $ node index.js
 ```
@@ -30,7 +35,7 @@ En primer lugar, en ``/`` se encuentra el carrito con el formulario de los produ
 
 
 ### Creación del Checkout
-En el backend, en la ruta ``/checkout`` se utiliza la librería [mobbex](https://github.com/GrosfeldEzekiel/mobbex-node#readme) donde en primer lugar se utiliza ``configurations.setPrivateKey()`` pasando com argumento la clave privada. Luego se realiza el checkout con ``checkout.create()``, pasando como argumento el objeto con el checkout.
+En el backend, en la ruta ``/checkout`` se utiliza la librería [mobbex-node](https://github.com/GrosfeldEzekiel/mobbex-node#readme) donde en primer lugar se utiliza ``configurations.setPrivateKey()`` pasando com argumento la clave privada. Luego se realiza el checkout con ``checkout.create()``, pasando como argumento el objeto con el checkout.
 
 Admite todos los parámetros de [Checkout]( https://mobbex.dev/docs/checkout ), pero además se establecen los siguientes:
 - ``customer:`` Objeto de tipo JSON con los datos del cliente. Obligatorios:
