@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mobbex": "^1.11.0",
+    "mobbex": "^2.3.1",
     "path": "^0.12.7"
   }
 }

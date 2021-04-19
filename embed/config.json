@@ -1,7 +1,8 @@
 {
-    "port": 3000,
-    "apiKey": "",
-    "accessToken": "",
-    "domain": "",
-    "reference": ""
+    "port": 3002
+    ,
+    "apiKey": "zJ8LFTBX6Ba8D611e9io13fDZAwj0QmKO1Hn1yIj",
+    "accessToken": "d31f0721-2f85-44e7-bcc6-15e19d1a53cc",
+    "domain": "69a1f172dde1.ngrok.io",
+    "reference": "reference"
 }

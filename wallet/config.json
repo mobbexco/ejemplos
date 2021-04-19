@@ -1,12 +1,13 @@
 {
-    "port": 3000,
-    "privateKey": "",
-    "domain": "",
-    "reference": "",
-    "customer": {
-        "uid": "",
-        "name": "",
-        "identification": "",
-        "email": ""
-    }
+  "port": 3000,
+  "apiKey": "zJ8LFTBX6Ba8D611e9io13fDZAwj0QmKO1Hn1yIj",
+  "accessToken": "d31f0721-2f85-44e7-bcc6-15e19d1a53cc",
+  "domain": "8d6b7ed6cd2f.ngrok.io",
+  "reference": "ref-example",
+  "customer": {
+    "uid": "example-id",
+    "name": "John Doe",
+    "identification": "12123123",
+    "email": "test@test.com"
+  }
 }
