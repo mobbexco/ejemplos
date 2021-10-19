@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <!-- <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p> -->
+
+    <div>
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label position="stacked">Número de Tarjeta</ion-label>
+              <ion-input placeholder="4510 0000 0000 0001" name="cardNumber" [(ngModel)]="cardNumber" (ngModelChange)="onChangeCardNumber(cardNumber)" [ngModelOptions]="{standalone: true}"></ion-input>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label>Cuotas</ion-label>
+              <ion-select placeholder="Elija una" [ngModel]="selectedInstallment">
+                <ion-select-option *ngFor="let installment of detectedInstallments" [value]="installment.reference">{{installment.name}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label position="stacked">Nombre como aparece en la Tarjeta</ion-label>
+              <ion-input placeholder="Juan Perez"></ion-input>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label position="stacked">DNI Titular</ion-label>
+              <ion-input placeholder="12123123"></ion-input>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label position="stacked">Vencimiento</ion-label>
+              <ion-input placeholder="03/34" name="cardExp" [(ngModel)]="cardExp" (ngModelChange)="onChangeCardExp(cardExp)" [ngModelOptions]="{standalone: true}"></ion-input>
+            </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">Cod. Seguridad</ion-label>
+            <ion-input placeholder="345"></ion-input>
+          </ion-item>
+      </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-row>
+        <ion-col>
+          <ion-button expand="block" (click)="onPaymentClicked($event)">Pagar</ion-button>
+      </ion-col>
+  </ion-row>
+  </div>
+</ion-content>
